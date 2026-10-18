@@ -1,1 +1,10 @@
-{"enabled":false,"endpoint":""}
+{
+  "enabled": true,
+  "endpoint": "https://iijkbeclmrvfejqogxey.supabase.co/functions/v1/awareness-tracker/events",
+  "links": {
+    "utazas-01": "a886c38f22b6d8858a2db83d9f9459fc",
+    "politika-01": "d78dd1889e7cde4431731e1593a2d845",
+    "zongora-01": "01e1fcfdd1f1445d6c03a8d7dfbad02a",
+    "teszt": "ec167bc6d438c99e4ae756d195b3ae1c"
+  }
+}

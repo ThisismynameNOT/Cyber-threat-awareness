@@ -1,0 +1,2 @@
+# Outlook MIME messages require CRLF; do not normalize their line endings.
+*.eml -text whitespace=cr-at-eol

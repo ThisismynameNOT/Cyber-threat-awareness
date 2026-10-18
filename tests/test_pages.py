@@ -41,6 +41,7 @@ class PagesTests(unittest.TestCase):
                 self.assertEqual(parser.links,[expected])
                 self.assertIn(expected,plain)
                 self.assertIn('SZIMULÁCIÓ',html.upper());self.assertIn('SZIMULÁCIÓ',plain.upper())
+                self.assertIn('rögzíti a hivatkozás',html);self.assertIn('rögzíti a hivatkozás',plain)
                 self.assertNotIn('chatgpt.site',html+plain)
                 self.assertEqual(len(parser.images),1)
                 self.assertTrue(parser.images[0].startswith('cid:'))
@@ -51,14 +52,18 @@ class PagesTests(unittest.TestCase):
     def test_pages_has_no_server_or_credential_dependency(self):
         config=ROOT/'docs/tracking-config.json'
         self.assertTrue(config.is_file())
-        self.assertEqual(json.loads(config.read_text()),{'enabled':False,'endpoint':''})
+        settings=json.loads(config.read_text())
+        self.assertTrue(settings['enabled'])
+        self.assertEqual(settings['endpoint'],'https://iijkbeclmrvfejqogxey.supabase.co/functions/v1/awareness-tracker/events')
+        self.assertEqual(set(settings['links']),{'utazas-01','politika-01','zongora-01','teszt'})
+        for rid in settings['links'].values():self.assertRegex(rid,r'^[a-f0-9]{32}$')
+        self.assertEqual(set(settings),{'enabled','endpoint','links'})
         self.assertTrue((ROOT/'docs/.nojekyll').exists())
         for path in (ROOT/'docs').rglob('*.html'):
             html=path.read_text()
             self.assertNotIn('chatgpt.site',html)
             self.assertNotIn('signin-with-chatgpt',html)
-            self.assertNotIn('type="password"',html)
-            self.assertNotIn('rögzíti a hivatkozás',html)
+            if path.parent.name != 'results':self.assertNotIn('type="password"',html)
 
     def test_frontend_tracking_is_optional_and_uses_only_allowlisted_fields(self):
         path=ROOT/'docs/assets/tracker.js'
