@@ -1,0 +1,15 @@
+{
+  "name": "cyber-awareness-tracker",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-18",
+  "vars": {
+    "ALLOWED_ORIGIN": "https://thisismynamenot.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cyber-awareness",
+      "database_id": "REPLACE_WITH_YOUR_CREATED_D1_DATABASE_ID"
+    }
+  ]
+}

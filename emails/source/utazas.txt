@@ -1,0 +1,9 @@
+OKTATÁSI SZIMULÁCIÓ · BIZTONSÁGTUDATOSSÁGI GYAKORLAT
+
+Utazás előtt: egy perc figyelem.
+
+Feladó: Ellenőrizze a feladó teljes e-mail-címét.
+Webcím: Ellenőrizze a hivatkozás célját.
+Sürgetés: Ne döntsön ellenőrzés nélkül.
+
+Oktatási oldal: {{TRAINING_URL}}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Magyar kiberbiztonsági szimuláció, rövid útmutatóval az e-mailes csalások felismeréséhez.">
+  <title>Kiberbiztonsági szimuláció</title>
+  <style>
+    :root{color-scheme:dark;--background:#101011;--panel:#19191c;--text:#f5f3ef;--muted:#cbc7c2;--red:#ff6257;--line:#49413f}
+    *{box-sizing:border-box}
+    html{border-top:5px solid var(--red);scroll-behavior:smooth}
+    body{margin:0;background:var(--background);color:var(--text);font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%}
+    ::selection{background:var(--red);color:var(--background)}
+    .page{min-height:calc(100svh - 5px);max-width:1060px;margin:0 auto;padding:36px 48px 45px;display:flex;flex-direction:column;justify-content:center}
+    .warning-top{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:22px}
+    .disclosure{margin:0;color:var(--text);font-size:17px;line-height:1.5;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    .skull{display:block;width:104px;height:104px;flex:0 0 auto;color:var(--red)}
+    blockquote{margin:0}
+    h1{margin:0;color:var(--red);font-size:clamp(44px,8.5vw,100px);font-weight:900;line-height:1.02;letter-spacing:-.035em;text-transform:uppercase}
+    h1 span{display:block}
+    .threat{max-width:25ch;margin:23px 0 28px;font-size:clamp(24px,3.3vw,36px);font-weight:700;line-height:1.3;letter-spacing:-.02em}
+    .retrieve{display:inline-flex;justify-content:center;align-items:center;align-self:flex-start;min-height:60px;padding:17px 25px;border:2px solid var(--red);background:var(--red);color:var(--background);font-size:21px;line-height:1.3;font-weight:700;text-decoration:none;text-align:center}
+    .retrieve:hover{background:var(--text);border-color:var(--text)}
+    .retrieve:focus-visible{outline:3px solid var(--text);outline-offset:6px}
+    .button-note{margin:12px 0 0;color:var(--muted);font-size:17px;line-height:1.5}
+    .education{background:var(--panel);border-top:1px solid var(--line);padding:56px 48px 64px;scroll-margin-top:0}
+    .education-inner{max-width:964px;margin:0 auto}
+    h2{margin:0 0 21px;font-size:clamp(28px,4vw,42px);line-height:1.2;letter-spacing:-.025em}
+    .education p{max-width:60ch;margin:0 0 22px;color:var(--muted);font-size:21px;line-height:1.6}
+    .notes{margin:26px 0;padding-left:26px;max-width:65ch}
+    .notes li{padding:0 0 18px 7px;font-size:21px;line-height:1.6}
+    .notes li::marker{color:var(--red)}
+    .education .reminder{margin:7px 0 0;color:var(--text);font-weight:700}
+    @media(max-width:600px){
+      .page{padding:24px 24px 36px;justify-content:center}
+      .warning-top{margin-bottom:24px}.disclosure{font-size:15px;letter-spacing:.07em}
+      .skull{width:80px;height:80px}
+      h1{font-size:clamp(42px,10vw,60px)}
+      .threat{font-size:25px;margin-top:21px;margin-bottom:28px}
+      .retrieve{width:100%;font-size:20px;padding:17px 18px}
+      .button-note{font-size:16px}
+      .education{padding:38px 24px 42px}.education p,.notes li{font-size:20px;line-height:1.6}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{html{border-top:3px solid #000}body{background:white;color:#000}.page{min-height:0;padding:24px}.retrieve,.button-note{display:none}.education{background:white;padding:24px}.skull,h1,.threat,.disclosure,.education p,.education .reminder{color:#000}h1{font-size:42pt}}
+  </style>
+</head>
+<body data-campaign="teszt">
+  <main>
+    <section class="page" aria-labelledby="warning-title">
+      <div class="warning-top">
+        <p class="disclosure">Szimuláció</p>
+        <svg class="skull" viewBox="0 0 128 128" fill="none" aria-hidden="true"><path d="M64 8C36 8 18 27 18 52c0 17 8 30 22 37v24h48V89c14-7 22-20 22-37C110 27 92 8 64 8Z" fill="currentColor"/><ellipse cx="45" cy="52" rx="13" ry="15" fill="#101011"/><ellipse cx="83" cy="52" rx="13" ry="15" fill="#101011"/><path d="m64 67-9 15h18L64 67Z" fill="#101011"/><path d="M42 95h44M52 95v18m12-18v18m12-18v18" stroke="#101011" stroke-width="4"/></svg>
+      </div>
+      <blockquote aria-label="Szimulált támadói üzenet">
+        <h1 id="warning-title"><span>Feltörtük</span><span>a fiókját.</span></h1>
+        <p class="threat">Minden személyes adata nálunk van.</p>
+      </blockquote>
+      <a class="retrieve" href="#tanacsok" aria-describedby="button-note">Adatok visszaszerzése</a>
+      <p class="button-note" id="button-note">A gomb oktatási útmutatóhoz vezet.</p>
+    </section>
+    <section class="education" id="tanacsok" aria-labelledby="education-title" tabindex="-1">
+      <div class="education-inner">
+        <h2 id="education-title">Ez egy oktatási szimuláció.</h2>
+        <p>A figyelmeztetés egy kitalált támadói üzenet. Az oldal nem fér hozzá a személyes fájljaihoz. Nincs itt visszaszerezhető adat.</p>
+        <ul class="notes">
+          <li>Váratlan e-mailben kapott linket ne nyisson meg.</li>
+          <li>Ellenőrizze a feladó teljes e-mail-címét. A szolgáltatást külön, az ismert alkalmazásból nyissa meg.</li>
+          <li>Váratlan kérésre ne adjon meg jelszót, bankkártyaadatot vagy egyszer használatos kódot.</li>
+          <li>Ha bizonytalan, kérjen segítséget egy megbízható személytől.</li>
+        </ul>
+        <p class="reminder">A sürgetés és az ijesztgetés is figyelmeztető jel.</p>
+      </div>
+    </section>
+  </main>
+<script src="assets/tracker.js" defer></script>
+</body>
+</html>

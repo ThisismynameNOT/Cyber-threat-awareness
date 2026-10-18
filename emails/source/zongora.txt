@@ -1,0 +1,9 @@
+OKTATÁSI SZIMULÁCIÓ
+
+Szia!
+
+Összeraktam egy rövid etűdöt a haladó növendékeknek, de a középső ritmusváltásban még nem vagyok biztos. Megnéznéd, te hogyan tanítanád? A kottarészlet itt van.
+
+Megnézem a kottát: {{TRAINING_URL}}
+
+A gomb kiberbiztonsági tananyaghoz vezet; nem indít letöltést.
