@@ -1,9 +1,18 @@
-OKTATÁSI SZIMULÁCIÓ · BIZTONSÁGTUDATOSSÁGI GYAKORLAT
+Déli kitérő
+Utazási ötletek · rövid kikapcsolódások
 
-Utazás előtt: egy perc figyelem.
+Decemberi last minute Pozsonyból Barcelonába
 
-Feladó: Ellenőrizze a feladó teljes e-mail-címét.
-Webcím: Ellenőrizze a hivatkozás célját.
-Sürgetés: Ne döntsön ellenőrzés nélkül.
+Decemberben irány Barcelona.
+Még egy kis napfény az év végére.
 
-Oktatási oldal: {{TRAINING_URL}}
+Reggeli egy teraszon, séta a tengerparton, este tapas a városban. Ha decemberben még beleférne néhány nap kikapcsolódás, nézd meg ezt a pozsonyi indulású barcelonai útötletet.
+
+Indulás: Pozsony · repülővel Barcelonába
+Úti cél: Barcelona · városnézés és tengerpart
+Időszak: December · néhány napos kikapcsolódás
+
+Megnézem a decemberi ajánlatot:
+{{TRAINING_URL}}
+
+Fiktív utazási ajánlat. Oktatási szimuláció; az ajánlat nem foglalható.

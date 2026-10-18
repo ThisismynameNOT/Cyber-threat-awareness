@@ -1,9 +1,15 @@
-OKTATÁSI SZIMULÁCIÓ
+Kottalap műhely
 
 Szia!
 
-Összeraktam egy rövid etűdöt a haladó növendékeknek, de a középső ritmusváltásban még nem vagyok biztos. Megnéznéd, te hogyan tanítanád? A kottarészlet itt van.
+Átdolgoztam egy rövid etűdben a bal kéz kíséretét, de a 12–15. ütem szinkópáinál jól jönne a véleményed. Szerinted egy haladó növendékkel már egyben vennéd, vagy előbb külön gyakoroltatnád? A kottarészlethez ujjrendet is írtam.
 
-Megnézem a kottát: {{TRAINING_URL}}
+Rövid etűd · ujjrenddel · 12–15. ütem
 
-A gomb kiberbiztonsági tananyaghoz vezet; nem indít letöltést.
+Ránézek a kottarészletre:
+{{TRAINING_URL}}
+
+Köszönöm!
+Eszter · Kottalap műhely
+
+Fiktív szakmai levél. Oktatási szimuláció; a hivatkozás tananyaghoz vezet, nem indít letöltést.

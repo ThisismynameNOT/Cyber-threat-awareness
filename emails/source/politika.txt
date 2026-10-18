@@ -1,22 +1,16 @@
-OKTATÁSI SZIMULÁCIÓ — FIKTÍV HÍRHELYZET
-
 Közéleti körkép.
-Szlovákia · Politika · Háttér
+Szlovákia · Elemzés · Háttér
 
-POZSONY / KÜLÖNKIADÁS
+Egy mondat kimaradt.
+Pedig erről szólt a pozsonyi vita.
 
-Drámai fordulat Pozsonyban.
-Mi történt a zárt ajtók mögött?
+A rendkívüli pozsonyi ülés után kiadott közlemény három bekezdésben foglalta össze az estét. A háttéranyag egyik melléklete azonban más hangsúlyokat mutat.
 
-Rendkívüli ülés. Váratlan bejelentés. Egy háttéranyag, amely új kérdéseket vet fel.
+Egymás mellé tettük a közleményt és a vitatott szövegrészt. Megmutatjuk, melyik mondat maradt ki, és miért lett belőle ekkora vita a zárt ülésen.
 
-A napirend utolsó pontja lett az este legnagyobb meglepetése. Mi maradt ki a hivatalos összefoglalóból, és miért éppen ez az egy bekezdés keltett ekkora figyelmet?
+A teljes szövegrész, kiemelve.
 
-A lényeg ezúttal a sorok között van.
-
-Megnézem a részleteket:
+Elolvasom a háttéranyagot:
 {{TRAINING_URL}}
 
-A hivatkozás a kiberbiztonsági gyakorlat oktatási oldalára vezet. 
-
-Ez a történet kitalált. Nem valós politikai eseményről szól. A levél egy kiberbiztonsági tudatosságot fejlesztő gyakorlat része.
+Fiktív közéleti történet. Oktatási szimuláció; nem valós politikai eseményről szól.

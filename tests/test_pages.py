@@ -31,7 +31,8 @@ class PagesTests(unittest.TestCase):
                 path=ROOT/'emails'/f'{slug}.eml'
                 self.assertTrue(path.is_file(),str(path))
                 msg=BytesParser(policy=default).parsebytes(path.read_bytes())
-                self.assertFalse(msg.defects);self.assertTrue(str(msg['Subject']).startswith('[SZIMULÁCIÓ]'))
+                self.assertFalse(msg.defects)
+                self.assertEqual(str(msg['Subject']),json.loads((ROOT/'emails/subjects.json').read_text())[slug])
                 self.assertEqual(msg['X-Unsent'],'1')
                 self.assertIsNone(msg['To']);self.assertIsNone(msg['From'])
                 html=msg.get_body(preferencelist=('html',)).get_content()
